@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoHunger</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/31dcf69b95.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="bar-btn"></i>
+                <i class="fas fa-times" id="cancel-btn"></i>
+            </label>
+            <div id="top-logo">
+            <img src="images/iconnew.png" alt="">
+            <h2>NoHunger</h2>
+            </div>
+            <ul>
+                
+                <li><a class="pageitem" data-link="home">Home</a></li>
+                <li><a class="pageitem" data-link="about">About</a></li>
+                <li><a class="pageitem" data-link="help">Help</a></li>
+                </div>
+            </ul>
+            <div class="cart"><i class="fa-solid fa-cart-shopping" onclick="down()" id="cart-icon"></i><p id="count">0</p></div>
+        </nav>
+        <div id="home">
+        <div id="menu-container">
+            <div id="category-list">
+                <p id="item-menu">whats on your mind</p>
+                <div class="border"></div>                
+            </div>
+            <div>
+                <ul class="menu-list">
+                    <li class="listitem" id="biryani-list"><a class="linkitem" data-link="biryani">
+                        <img src="images/biryani/Chicken-Biryani-hyd.jpg" alt=""><br>
+                        <h3>Biryani</h3>
+                    </a></li>
+                    <li class="listitem"><a class="linkitem" data-link="chicken">
+                        <img src="images/chicken/Murgh-Musallam.jpg" alt=""><br>
+                        <h3>Chicken</h3></a></li>
+                    <li class="listitem"><a class="linkitem" data-link="paneer">
+                        <img src="images/paneer/palak-paneer.jpg" alt=""><br>
+                        <h3>Paneer</h3></a></li>
+                    <li class="listitem"><a class="linkitem" data-link="vegetable">
+                        <img src="images/vegetable/vegetable-biryani.jpg" alt=""><br>
+                        <h3>Veg</h3></a></li>
+                    <li class="listitem"><a class="linkitem" data-link="chinese">
+                        <img src="images/chinese/ChickenManchurian.jpg" alt=""><br>
+                        <h3>Chinese</h3></a></li>
+                    <li class="listitem"><a class="linkitem" data-link="south-indian">
+                        <img src="images/southindian/Butter-Masala-Dosa.png" alt=""><br>
+                        <h3>South Indian</h3></a></li>
+                </ul>
+            </div>
+            </div>
+        
+            <div id="root">
+                <div id="biryani" class="d-biryani">
+                    <p id="category-name">Biryani</p> 
+                    <div id="biryani-box"></div>   
+                </div>
+
+                <div id="chicken" class="d-chicken">
+                    <p id="category-name">Chicken Delicious</p>
+                    <div id="chicken-box"></div>    
+                </div>
+
+                <div id="paneer" class="d-paneer">
+                    <p id="category-name">Paneer Mania</p>
+                    <div id="paneer-box"></div>
+                </div>
+
+                <div id="vegetable" class="d-vegetable">
+                    <p id="category-name">Pure Veg Dishes</p>
+                    <div id="vegetable-box"></div> 
+                </div>
+
+                <div id="chinese" class="d-chinese">
+                    <p id="category-name">Chinese Corner</p> 
+                    <div id="chinese-box"></div>
+                </div>
+
+                <div id="south-indian" class="d-south-indian">
+                    <p id="category-name">South Indian</p>
+                    <div id="south-box"></div>
+                </div>
+            </div>
+            <div class="sidebar" id="cart-page" style="display: none;">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                </div>
+            </div></div>
+            <div id="about">
+                <h1>ABOUT</h1>
+                    <div id="about-content">
+                    <p>At <i>'NoHunger'</i>, we’re tied in with presenting crisp food, regardless of whether it implies going the additional mile. When you stroll through our entryways, we do what we can to make everybody feel comfortable in light of the fact that our family stretches out through your locale.</p><br>
+    
+                        <p><i>'NOHunger'</i> is an organization that is continually developing. From the principal eatery in 1969, we’ve kept on extending’ vision to help other individuals end up effective entrepreneurs by owning an ‘NoHunger’ establishment. We search for franchisees who are focused on quality, not compromising.
+                        
+                        Today, we can be found in numerous nations and have our sights on extending much more. Be that as it may, regardless of where you discover us, quality will dependably be our formula.
+                        
+                        We Believe in Quality. All around. Quality food can’t be made without quality initiative. Find out about the general population driving The <i>'NoHunger'</i></p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-img">
+                            <img src="images/orderfood.jpeg" alt=""><br>
+                            <h3>order</h3>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/deliveryboy.jpeg" alt=""><br>
+                            <h3>We Deliver</h3>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/eating food.jpeg" alt=""><br>
+                            <h3>Enjoy</h3>
+                        </div>
+                    </div>
+    
+            </div>
+            <div id="help">
+                <h1>HELP CENTER</h1>
+                    <div id="faq">
+                        <h2>FAQ'S :</h2>
+                    </div>
+                    <div>
+                        <div class="questions">
+                            <button class="questions-btn">
+                                <span class="writeup">What is NoHunger customercare number ?</span>
+                                <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                            </button>
+    
+                            <button class="questions-btn">
+                                    <span class="writeup">I want to provide Feedback</span>
+                                    <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                                </button>
+                           <button class="questions-btn">
+                                    <span class="writeup">I want to cancel my order</span>
+                                     <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                                </button>
+                            <button class="questions-btn">
+                                    <span class="writeup">What are your delivery hours</span>
+                                    <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                                </button>
+                                <button class="questions-btn">
+                                    <span class="writeup">Issue with deliveryboy</span>
+                                    <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                                </button>
+                         </div>
+                    
+                </div>
+                </div>
+                <div id="footer">
+                        <div id="logo-bottom">
+                            <img src="images/iconnew.png" width="100px" alt="">
+                            <h2>NoHunger</h2>
+                        </div>
+                        <div id="name-bottom">
+                            <h3>@NoHunger 2023</h3>
+                        </div>
+                        <div id="icon-bottom">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-square-facebook"></i>
+    
+                        </div>
+                </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body> 
+</body>
+</html>
