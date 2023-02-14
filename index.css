@@ -592,7 +592,7 @@ label #cancel-btn{
     }
     
 }
-@media  (max-width:389px) {
+@media  (max-width:400px) {
     .card-img{
         width: 296px;
     }
@@ -607,11 +607,11 @@ label #cancel-btn{
     #help{
         width: 165%;
         top: 2483px;
-        height: 1355px;
+        height: 158%;
 
     }
     #footer{
-        width: 165%;
+        width: 166%;
         top: 3444px;
 
 
@@ -714,6 +714,18 @@ label #cancel-btn{
         width:200px;
     }
 }
+@media (max-width:447px) and(min-width-400px){
+    #about{
+        height:216%;
+    }
+    #help{
+        top:2305px;
+    }
+    #footer{
+        top:3034px;
+    }
+}
+
 .listitem img{
     width: 90px;
     height: 90px;
