@@ -676,7 +676,12 @@ function decrement(a){
         inc.splice(index,1)
     }
     d=inc.filter((item)=>item==`cart-count${a}`).length
+    if(d==0){
+        return
+    }
+    else{
     f[a]=d
+    console.log(f)
     document.getElementById(`cart-count${a}`).innerText=d
     cost=0 
     console.log(inc)
@@ -686,8 +691,25 @@ function decrement(a){
     document.getElementById("total").innerHTML = "$ "+cost+".00";
     console.log(f)
 }
+}
+const toggle=document.getElementById("toggle");
+const dropDown=document.getElementById("dropdown-menu")
+document.onclick=function(e){
+    if(e.target.id!=="dropdown-menu" && e.target.id!=="toggle"){
+        toggle.classList.remove("active")
+    dropDown.classList.remove("active")
+    }
+}
+toggle.onclick=function(){
+    toggle.classList.toggle("active")
+    dropDown.classList.toggle("active")
+}
 
-
-
+const side=document.getElementById("cart-icon");
+const sidePage=document.getElementById("cart-page")
+side.onclick=function(){
+    side.classList.toggle("active")
+    sidePage.classList.toggle("active")
+}
 
 
